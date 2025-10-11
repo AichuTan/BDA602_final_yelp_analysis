@@ -1,0 +1,3 @@
+# local artifacts (not for git)
+plots_unsup/
+unsup_kproto/
