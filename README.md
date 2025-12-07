@@ -1,7 +1,7 @@
 # Predicting Restaurant Ratings Using Yelp Business Metadata and Engagement  
 **Course:** BDA 602 – Fall 2025  
 **Institution:** San Diego State University – College of Arts and Letters, Big Data Analytics  
-
+**Project Link: ** [Project Link](https://aichutan.github.io/BDA602_final_yelp_analysis/)
 ---
 
 ## 🧠 Team Members  
