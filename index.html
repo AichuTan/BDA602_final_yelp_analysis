@@ -34,7 +34,7 @@
           <div class="hero__actions">
             <a
               class="btn btn--primary"
-              href="https://github.com/AichuTan/Dengue_Taiwan_Forecast"
+              href="https://aichutan.github.io/BDA602_final_yelp_analysis/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -57,7 +57,7 @@
             <li><span>61</span> engineered features using metadata only</li>
             <li><span>0.79</span> ROC-AUC with Random Forest / XGBoost</li>
             <li>
-              Unsupervised <span>K-Prototypes</span> for restaurant archetypes
+              <span>3 archetypes</span> identified via K-Prototypes clustering
             </li>
           </ul>
         </div>
@@ -145,18 +145,17 @@
           <div class="section-block section-block--accent">
             <h3 class="section-block__title">What Was Practiced</h3>
             <ul class="list list--check">
-              <li>JSON parsing and data cleaning at scale</li>
+              <li>Structured data wrangling and JSON normalization</li>
               <li>
-                Feature engineering for time, text-length, and categorical
-                variables
+                Feature engineering for operations, amenities, and review
+                behavior
               </li>
               <li>
-                Handling skew using transforms (e.g.
-                <code>log1p(review_count)</code>)
+                Leakage-free preprocessing pipelines (imputation, encoding,
+                scaling)
               </li>
-              <li>
-                Encoding mixed categorical & numeric data for ML pipelines
-              </li>
+              <li>RandomizedSearchCV for hyperparameter tuning</li>
+              <li>MLflow tracking for metrics, parameters, and artifacts</li>
             </ul>
           </div>
         </div>
@@ -373,30 +372,19 @@
             Clustering Insights
           </h3>
           <p class="section__text">
-            K-Prototypes clustering revealed three natural restaurant
-            archetypes: (1) highly rated family-casual venues emphasizing
-            accessibility and comfort, (2) mid-rated social dining formats with
-            alcohol/happy hour, and (3) mid-to-upscale dining establishments
-            where customer expectations may exceed perceived value. These
-            segments aligned closely with supervised model findings and
-            illustrate how operational and service characteristics influence
-            Yelp performance.
+            K-Prototypes clustering revealed three distinct restaurant
+            archetypes within the Yelp dataset. Cluster 1, the highest-rated
+            group, consisted of value-oriented, accessible, family-casual venues
+            emphasizing comfort and inclusivity. Cluster 0, representing
+            mid-rated restaurants, reflected social dining environments
+            characterized by alcohol or happy-hour offerings, moderate noise
+            levels, and table service. Cluster 2, the lowest-rated segment,
+            captured mid-to-upscale dining formats where higher prices and
+            reservations did not always meet customer expectations, resulting in
+            noticeable expectation–value gaps. These clusters closely aligned
+            with supervised model findings and highlight how operational and
+            service characteristics shape Yelp performance.
           </p>
-
-          <ul class="list list--check">
-            <li>
-              <strong>Cluster 1 (highest-rated):</strong> value-oriented,
-              accessible, family-casual
-            </li>
-            <li>
-              <strong>Cluster 0 (mid-rated):</strong> social dining, moderate
-              noise, alcohol service
-            </li>
-            <li>
-              <strong>Cluster 2 (lowest-rated):</strong> upscale formats with
-              expectation–value gaps
-            </li>
-          </ul>
 
           <!-- Final Takeaways -->
           <h3 class="subheading" style="margin-top: 1.5rem">Key Takeaways</h3>
@@ -489,6 +477,33 @@
             <strong>Technical Lead:</strong> Aichu Tan<br />
             <strong>Team Members:</strong> Swikriti, Eddie
           </p>
+          <div>
+            <h3>Resources & Downloads</h3>
+            <ul class="nice-list">
+              <li>
+                <a href="assets/report.pdf" target="_blank"
+                  >Full Capstone Report (PDF)</a
+                >
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/aichutan/" target="_blank"
+                  >My Linkedin</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/AichuTan/BDA602_final_yelp_analysis"
+                  target="_blank"
+                  >GitHub Repository (Code & Notebooks)</a
+                >
+              </li>
+              <li>
+                <a href="https://aichutan.github.io/" target="_blank"
+                  >My Full Portfolio</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -503,13 +518,6 @@
           </p>
         </div>
         <div class="footer__links">
-          <a
-            href="https://github.com/AichuTan/Dengue_Taiwan_Forecast"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub: Dengue Forecast Project
-          </a>
           <a
             href="https://www.linkedin.com/in/aichutan/"
             target="_blank"
